@@ -13,6 +13,7 @@
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-medium: 500;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -184,11 +185,20 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
+  .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
   .mt-18 {
     margin-top: calc(var(--spacing) * 18);
   }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
   .mt-24 {
     margin-top: calc(var(--spacing) * 24);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
@@ -220,6 +230,9 @@
   .h-\[56px\] {
     height: 56px;
   }
+  .h-\[250px\] {
+    height: 250px;
+  }
   .h-\[747px\] {
     height: 747px;
   }
@@ -241,11 +254,17 @@
   .w-\[90\%\] {
     width: 90%;
   }
+  .w-\[90\] {
+    width: 90;
+  }
   .w-\[94\%\] {
     width: 94%;
   }
   .w-\[137px\] {
     width: 137px;
+  }
+  .w-\[141px\] {
+    width: 141px;
   }
   .w-\[148px\] {
     width: 148px;
@@ -261,6 +280,9 @@
   }
   .w-\[600px\] {
     width: 600px;
+  }
+  .w-\[905\] {
+    width: 905;
   }
   .w-\[px\] {
     width: px;
@@ -305,14 +327,32 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-3 {
+    border-style: var(--tw-border-style);
+    border-width: 3px;
+  }
+  .border-\[3px\] {
+    border-style: var(--tw-border-style);
+    border-width: 3px;
+  }
+  .border-b-\[3px\] {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 3px;
+  }
   .border-\[\#685A5275\] {
     border-color: #685A5275;
+  }
+  .border-\[\#222222\] {
+    border-color: #222222;
   }
   .bg-\[\#402F2C\] {
     background-color: #402F2C;
   }
   .bg-\[\#F9F6F5\] {
     background-color: #F9F6F5;
+  }
+  .bg-\[\#FDF8F5\] {
+    background-color: #FDF8F5;
   }
   .bg-white {
     background-color: var(--color-white);
@@ -360,6 +400,10 @@
   .text-\[56px\] {
     font-size: 56px;
   }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -378,6 +422,9 @@
   }
   .text-\[2\] {
     color: 2;
+  }
+  .text-\[px\] {
+    color: px;
   }
   .text-white {
     color: var(--color-white);
