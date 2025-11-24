@@ -7,8 +7,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-medium: 500;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -165,8 +169,14 @@
   .m-auto {
     margin: auto;
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
@@ -174,8 +184,17 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
+  .mt-18 {
+    margin-top: calc(var(--spacing) * 18);
+  }
   .mt-24 {
     margin-top: calc(var(--spacing) * 24);
+  }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
   }
   .flex {
     display: flex;
@@ -195,14 +214,29 @@
   .h-\[52px\] {
     height: 52px;
   }
+  .h-\[56\[\]\] {
+    height: 56[];
+  }
   .h-\[56px\] {
     height: 56px;
   }
   .h-\[747px\] {
     height: 747px;
   }
+  .h-\[812\] {
+    height: 812;
+  }
+  .h-\[812px\] {
+    height: 812px;
+  }
   .w-94 {
     width: calc(var(--spacing) * 94);
+  }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[88\%\] {
+    width: 88%;
   }
   .w-\[90\%\] {
     width: 90%;
@@ -210,14 +244,26 @@
   .w-\[94\%\] {
     width: 94%;
   }
+  .w-\[137px\] {
+    width: 137px;
+  }
   .w-\[148px\] {
     width: 148px;
+  }
+  .w-\[162px\] {
+    width: 162px;
   }
   .w-\[326px\] {
     width: 326px;
   }
   .w-\[380px\] {
     width: 380px;
+  }
+  .w-\[600px\] {
+    width: 600px;
+  }
+  .w-\[px\] {
+    width: px;
   }
   .w-full {
     width: 100%;
@@ -228,11 +274,20 @@
   .resize {
     resize: both;
   }
+  .items-center {
+    align-items: center;
+  }
   .justify-around {
     justify-content: space-around;
   }
+  .justify-baseline {
+    justify-content: baseline;
+  }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-items-stretch {
+    justify-items: stretch;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -243,9 +298,15 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-\[\#685A5275\] {
+    border-color: #685A5275;
   }
   .bg-\[\#402F2C\] {
     background-color: #402F2C;
@@ -259,8 +320,17 @@
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
+  }
+  .pl-7 {
+    padding-left: calc(var(--spacing) * 7);
+  }
   .pl-8 {
     padding-left: calc(var(--spacing) * 8);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
   }
   .pl-28 {
     padding-left: calc(var(--spacing) * 28);
@@ -268,17 +338,43 @@
   .pl-36 {
     padding-left: calc(var(--spacing) * 36);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
   .text-\[16px\] {
     font-size: 16px;
   }
   .text-\[20px\] {
     font-size: 20px;
   }
+  .text-\[30px\] {
+    font-size: 30px;
+  }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
   .text-\[56px\] {
     font-size: 56px;
   }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .text-\[\#402F2C\] {
+    color: #402F2C;
+  }
+  .text-\[\#222222\] {
+    color: #222222;
+  }
   .text-\[\#555555\] {
     color: #555555;
+  }
+  .text-\[\#E4E4E4\] {
+    color: #E4E4E4;
   }
   .text-\[2\] {
     color: 2;
@@ -288,6 +384,12 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .decoration-black {
+    text-decoration-color: var(--color-black);
+  }
+  .decoration-1 {
+    text-decoration-thickness: 1px;
   }
   .outline {
     outline-style: var(--tw-outline-style);
@@ -299,6 +401,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -308,6 +414,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
